@@ -1,24 +1,30 @@
 CREATE TABLE Category (
-    category_name VARCHAR(50) NOT NULL PRIMARY KEY
+    app_category VARCHAR(64) NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE Outcome (
-    winner NUMBER(1, 0) NOT NULL,
-    voted_name VARCHAR(4) NOT NULL,
-	CONSTRAINT PK_Outcome PRIMARY KEY (winner, voted_name)
+CREATE TABLE Genre (
+    app_genre VARCHAR(255) NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE Nominee (
-	category_name VARCHAR(50) NOT NULL REFERENCES Category(category_name),
-    year_ NUMBER(4, 0) NOT NULL CHECK (year_>0),
-    nominee_name VARCHAR(255) NOT NULL,
-    winner NUMBER(1, 0) NOT NULL REFERENCES Outcome(winner),
-    voted_name VARCHAR(4) NOT NULL REFERENCES Outcome(voted_name),
-	CONSTRAINT PK_Nominee PRIMARY KEY (category_name, year_, nominee_name)
+CREATE TABLE Type_ (
+    pricing_type VARCHAR(4) NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE Company (
-    nominee_name VARCHAR(255) NOT NULL PRIMARY KEY REFERENCES Nominee(nominee_name),
-	company_name VARCHAR(255)
+CREATE TABLE App_ (
+    app_name VARCHAR(255) NOT NULL PRIMARY KEY,
+    app_category VARCHAR(64) NOT NULL REFERENCES Category(app_category),
+    app_genre VARCHAR(255) NOT NULL REFERENCES Genre(app_genre)
 );
 
+CREATE TABLE UserInterest (
+    app_name VARCHAR(255) NOT NULL PRIMARY KEY,
+    rating NUMBER(*, 1) NOT NULL,
+    downloads_count VARCHAR(32) NOT NULL,
+    reviews_count NUMBER(16) NOT NULL
+);
+
+CREATE TABLE Pricing (
+    app_name VARCHAR(255) NOT NULL PRIMARY KEY,
+    pricing_type VARCHAR(50) NOT NULL REFERENCES Type_(pricing_type),
+    price VARCHAR(10) NOT NULL
+);
