@@ -226,3 +226,67 @@ VALUES('palmPEDi: Pediatric Tape', 'Paid', '$2.01');
 
 INSERT INTO Pricing(app_name, pricing_type, price)
 VALUES('Sudoku Master', 'Free', '0');
+
+
+
+-- Populate Details table
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Apk Installer', '19M', 'January 7, 2019', '1.0.0', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Bubble', '14M', 'January 15, 2018', '2.0.0', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('DB Browser', '8.7M', 'August 1, 2019', '1.2.4', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Satellite AR', '2.8M', 'June 20, 2018', '1.1', '4.4 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('EU VAT Checker', '5.6M', 'March 26, 2017', '1.0', '2.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Aviary Stickers: Free Pack', '19M', 'April 26, 2018', '1.1', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('IF YOU TO EU PEGO', '29M', 'June 14, 2019', '6.1.61.1', '4.2 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Cl-app!', '33M', 'September 20, 2017', '2.9.2', '3.0 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Car Race by Fun Games For Free', '3.1M', 'July 3, 2019', '2.8', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Grenada Co-operative Bank', '28M', 'October 27, 2017', '1.0.4', '4.1 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('BL Holo Theme', '12M', 'July 31, 2018', '1.0.15', '4.0 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('VAT check CY', '20M', 'April 2, 2018', '3.8', '4.1 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('signály.cz', '21M', 'June 26, 2019', '1.0.4', '4.4 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('SpongeBob Diner Dash', '37M', 'August 3, 2019', '1.2.3', '2.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Morse Code Reader', '5.5M', 'July 31, 2018', '3.1', '4.1 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('FRONTLINE COMMANDO', '17M', 'November 7, 2017', '1.0', '2.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('CKZ ORIGINS', '39M', 'August 3, 2018', '2.2.5', '4.0.3 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('AnatomyMapp', '31M', 'July 30, 2019', '5.5.4', '4.1 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('palmPEDi: Pediatric Tape', '14M', 'April 20, 2018', '4.0', '4.1 and up');
+
+INSERT INTO Details(app_name, size_, last_updated, current_ver, android_ver)
+VALUES('Sudoku Master', '12M', 'March 20, 2018', '1.1', '4.0.3 and up');
