@@ -28,3 +28,11 @@ CREATE TABLE Pricing (
 	pricing_type VARCHAR(50) NOT NULL REFERENCES Type_(pricing_type),
 	price VARCHAR(10) NOT NULL
 );
+
+CREATE TABLE Details (
+    app_name VARCHAR(255) NOT NULL PRIMARY KEY,
+    size_ VARCHAR(20) NOT NULL,
+    last_updated VARCHAR(50) NOT NULL,
+    current_ver VARCHAR(30) NOT NULL,
+    android_ver VARCHAR(50) NOT NULL
+);
