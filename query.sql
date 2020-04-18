@@ -18,8 +18,25 @@ GROUP BY
 
 
 -- Query 2
-#TODO
+SELECT 
+	rating,
+	SUM(100*reviews_count/CAST(REPLACE(SUBSTR(downloads_count,1,LENGTH(downloads_count)-1), ',', '') AS NUMBER(*))) as precentage
+FROM
+	UserInterest
+GROUP BY
+	rating
+ORDER BY
+	rating;
+
 
 
 -- Query 3
-#TODO
+SELECT
+	SUBSTR(last_updated,-4,4) AS last_updated_year,
+	COUNT(*) AS amount
+FROM
+	Details
+GROUP BY
+	SUBSTR(last_updated,-4,4)
+ORDER BY
+	SUBSTR(last_updated,-4,4);
